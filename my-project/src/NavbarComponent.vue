@@ -3,7 +3,7 @@ import { Navbar, NavbarLogo, NavbarCollapse, NavbarLink } from 'flowbite-vue'
 import { Carousel } from 'flowbite-vue'
 import { Table, TableHead, TableBody, TableHeadCell, TableRow, TableCell } from 'flowbite-vue'
 import { Progress } from 'flowbite-vue'
-import { Timeline, TimelineItem, TimelinePoint, TimelineTime, TimelineContent, TimelineTitle } from 'flowbite-vue'
+import { Timeline, TimelineItem, TimelinePoint, TimelineContent, TimelineTitle } from 'flowbite-vue'
 import { Input } from 'flowbite-vue'
 import { Pagination } from 'flowbite-vue'
 import { ref } from 'vue'
@@ -16,35 +16,54 @@ const pictures = [
     'alt': 'Picture 1',
   },
   {
-    'src': 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
+    'src': 'https://glamlelaki.my/wp-content/uploads/2021/04/APPLE-SPRING-LOADED-EVENT-3-PRODUK-TERBARU.jpg',
     'alt': 'Picture 2',
   },
   {
-    'src': 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
+    'src': 'https://www.intego.com/mac-security-blog/wp-content/uploads/2021/05/imac-ipad-600.jpg',
     'alt': 'Picture 3',
-  },
-  {
-    'src': 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
-    'alt': 'Picture 4',
-  },
-  {
-    'src': 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
-    'alt': 'Picture 5',
   },
 ];
 </script>
+<style>
+table{
+  margin: 20px;
+}
+
+Pagination{
+  margin: 20px;
+  display: flex;
+}
+
+placeholder{
+  margin: 20px;
+
+}
+label{
+  margin: 20px;
+}
+Timeline{
+  margin: 20px;
+}
+    .my-6{
+      margin:20px;
+    }
+    .my-6 h6{
+      margin:20px 0;
+    }
+  </style>
 <template>
     <Navbar solid>
       <template #logo>
         <NavbarLogo link="https://www.google.com/" alt="Flowbite logo" image-url="https://flowbite.com/docs/images/logo.svg">
-          AnimeKu
+          Data Apple
         </NavbarLogo>
       </template>
       <template #default="{isShowMenu}">
         <NavbarCollapse :isShowMenu="isShowMenu">
           <NavbarLink is-active>Home</NavbarLink>
           <NavbarLink a href>Product</NavbarLink>
-          <NavbarLink a href>kurva Penjualan</NavbarLink>
+          <NavbarLink a href>Penjualan</NavbarLink>
         </NavbarCollapse>
       </template>
     </Navbar>
@@ -143,20 +162,17 @@ const pictures = [
   <Progress labelProgress="true" labelPosition="inside" size="lg" progress="55"></Progress>
   </div>
 
-  <Timeline horizontal class="my-12">
+  <Timeline class="my-12">
     <timeline-item>
       <timeline-point>
         <svg aria-hidden="true" class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
       </timeline-point>
       <timeline-content>
-        <timeline-time>
-          February 2012
-        </timeline-time>
         <timeline-title>
-          Application Produk Upple
+              Juni 2014
         </timeline-title>
         <timeline-body>
-          Mendapatkan Para pengujung sekitan 10% setiap minggunya.
+          Produk pertama mulai di munculkan dengan harapan terjual sesuai target 10.000 unit dalam kurung waktu 1 tahun.
         </timeline-body>
       </timeline-content>
     </timeline-item>
@@ -165,14 +181,11 @@ const pictures = [
         <svg aria-hidden="true" class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
       </timeline-point>
       <timeline-content>
-        <timeline-time>
-          February 2019
-        </timeline-time>
         <timeline-title>
-          Application Produk Upple
+              September 2918
         </timeline-title>
         <timeline-body>
-          Mendapatkan para brand yang bersedia berlabuh dalam pasar electronik di website kami.
+          Seri Apple watch mulai di luncurkan, dengan target penjualan 3.000 unit dalam kurung waktu 3 bulan.
         </timeline-body>
       </timeline-content>
     </timeline-item>
@@ -181,14 +194,11 @@ const pictures = [
         <svg aria-hidden="true" class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
       </timeline-point>
       <timeline-content>
-        <timeline-time>
-          February 2023
-        </timeline-time>
         <timeline-title>
-          Application Produk Upple
+              juli 2022
         </timeline-title>
         <timeline-body>
-          Mendapatkan pengunjung 40% setiap minggunya dan 30% penjualan setiap bulannya.
+          Seri terbaru MacBook mulai di buat dengan target penyelesaian 100 unit per minggunya.
         </timeline-body>
       </timeline-content>
     </timeline-item>
